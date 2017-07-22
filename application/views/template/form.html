@@ -309,7 +309,7 @@
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            Forms Page <small>Best form elements.</small>
+                            Novo Chamado
                         </h1>
                     </div>
                 </div> 
@@ -318,20 +318,44 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Basic Form Elements
+                            Crie um novo Chamado
                         </div>
                         <div class="panel-body">
+                         <form method="post" action="<?=base_url('salvar')?>" enctype="multipart/form-data" role="form">
                             <div class="row">
                                 <div class="col-lg-6">
+<!--int    - ID_LOJA
+string - NOME_LOJA
+string - URL_ERRO
+string - DESCRIÇÃO_ERRO
+select - MODULO_ERRO
+select - PRIORIDADE
+file   - URL_PRINT -->
                                     <form method="post" action="<?=base_url('salvar')?>" enctype="multipart/form-data" role="form">
                                         <div class="form-group">
-                                            <label>Tex</label>
-                                            <input class="form-control">
-                                            <p class="help-block">Example block-level help text here.</p>
+                                            <label>ID da Loja</label>
+                                            <input type="number" name="id_loja" placeholder="ID da Loja" class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label>Text Input with Placeholder</label>
-                                            <input class="form-control" placeholder="Enter text">
+                                            <label>Link do erro</label>
+                                            <input type="text" name="link_erro" placeholder="Link do erro" class="form-control">
+                                        </div>
+                                         
+                                        <label>Cliente testou?</label>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="cliente_testou" id="cliente_testou" value="sim">Sim
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="cliente_testou" id="cliente_testou" value="nao" checked="checked">Não
+                                                </label>
+                                            </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Descrição do Erro</label>
+                                            <textarea class="form-control" placeholder="Digite o passo a passo pra causar o problema:" rows="5"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Static Control</label>
@@ -427,12 +451,38 @@
                                         </div>
                                         <button type="submit" class="btn btn-default">Submit Button</button>
                                         <button type="reset" class="btn btn-default">Reset Button</button>
-                                    </form>
+                                    
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->
                                 <div class="col-lg-6">
-                                    <h4>Disabled Form States</h4>
-                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Nome da Loja</label>
+                                            <input class="form-control" placeholder=" Entre com o nome da loja">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Data do Erro</label>
+                                            <input type="date" name="data_erro" placeholder="Data do Erro" class="form-control">
+                                        </div>
+                                        <label>O problema persistiu?</label>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="problema_persistiu" id="problema_persistiu" value="sim" checked="">Sim
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="problema_persistiu" id="problema_persistiu" value="nao" checked="checked">Não
+                                                </label>
+                                            </div>
+                                        <div class="form-group">
+                                            <label>Periodicidade</label>
+                                            <input type="text" name="periodicidade" placeholder="Periodicidade" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Ticket Zendesk</label>
+                                            <input type="text" name="periodicidade" placeholder="Periodicidade" class="form-control">
+                                        </div>
+                                    
                                         <fieldset disabled="">
                                             <div class="form-group">
                                                 <label for="disabledSelect">Disabled input</label>
