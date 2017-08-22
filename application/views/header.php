@@ -59,10 +59,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
             <!--logo and iconic logo start-->
             <div class="logo">
-                <h1><a href="<?=base_url()?>/home">Células <span>MBR</span></a></h1>
+                <h1><a href="<?=base_url()?>home">Células <span>MBR</span></a></h1>
             </div>
             <div class="logo-icon text-center">
-                <a href="<?=base_url()?>/home/"><i class="lnr lnr-home"></i> </a>
+                <a href="<?=base_url()?>home/"><i class="lnr lnr-home"></i> </a>
             </div>
 
             <!--logo and iconic logo end-->
@@ -76,9 +76,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <span>Components</span></a>
                                 <ul class="sub-menu-list">
                                     <li><a href="cked custom-nav">
-                        <li class="active"><a href="<?=base_url()?>grids">Grids</a> </li>
-                                    <li><a href="cked custom-nav">
-                        <li class="active"><a href="<?=base_url()?>widgets">Widgets</a></li>
+                        <li><a href="<?=base_url()?>grids">Grids</a> </li>
+                                
+                        <li><a href="<?=base_url()?>widgets">Widgets</a></li>
                                 </ul>
                         </li>
                         <li class="<?=$classe_nav[2]?>"><a href="<?=base_url()?>forms"><i class="lnr lnr-spell-check"></i> <span>Forms</span></a></li>
@@ -98,9 +98,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li class="<?=$classe_nav[7]?>"><a href="<?=base_url()?>media"><i class="lnr lnr-select"></i> <span>Media Css</span></a></li>
                         <li class="menu-list <?=$classe_nav[8]?>"><a href="#"><i class="lnr lnr-book"></i>  <span>Pages</span></a> 
                             <ul class="sub-menu-list">
-                                <li><a href="<?=base_url()?>sign-in">Sign In</a> </li>
-                                <li><a href="<?=base_url()?>sign-up">Sign Up</a></li>
-                                <li><a href="<?=base_url()?>blank_page">Blank Page</a></li>
+                                <li><a href="<?=base_url()?>signin">Sign In</a> </li>
+                                <li><a href="<?=base_url()?>signup">Sign Up</a></li>
+                                <li><a href="<?=base_url()?>blankpage">Blank Page</a></li>
                             </ul>
                         </li>
                     </ul>

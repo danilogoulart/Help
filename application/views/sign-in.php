@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Easy Admin Panel an Admin Panel Category Flat Bootstrap Responsive Website Template | Sign Up :: w3layouts</title>
+<title>Easy Admin Panel an Admin Panel Category Flat Bootstrap Responsive Website Template | Sign In :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Easy Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -46,77 +46,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <section>
 			<div id="page-wrapper" class="sign-in-wrapper">
 				<div class="graphs">
-					<div class="sign-up">
-						<h3>Register Here</h3>
-						<p class="creating">Having hands on experience in creating innovative designs,I do offer design 
-							solutions which harness.</p>
-						<h5>Personal Information</h5>
-						<div class="sign-u">
-							<div class="sign-up1">
-								<h4>First Name* :</h4>
-							</div>
-							<div class="sign-up2">
-								<form>
-									<input type="text" placeholder=" " required=" "/>
-								</form>
-							</div>
-							<div class="clearfix"> </div>
+					<div class="sign-in-form">
+						<div class="sign-in-form-top">
+							<p><span>Sign In to</span> <a href="index.html">Admin</a></p>
 						</div>
-						<div class="sign-u">
-							<div class="sign-up1">
-								<h4>Last Name* :</h4>
+						<div class="signin">
+							<div class="signin-rit">
+								<span class="checkbox1">
+									 <label class="checkbox"><input type="checkbox" name="checkbox" checked="">Forgot Password ?</label>
+								</span>
+								<p><a href="#">Click Here</a> </p>
+								<div class="clearfix"> </div>
 							</div>
-							<div class="sign-up2">
-								<form>
-									<input type="text" placeholder=" " required=" "/>
-								</form>
+							<form>
+							<div class="log-input">
+								<div class="log-input-left">
+								   <input type="text" class="user" value="Yourname" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address:';}"/>
+								</div>
+								<span class="checkbox2">
+									 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i></label>
+								</span>
+								<div class="clearfix"> </div>
 							</div>
-							<div class="clearfix"> </div>
+							<div class="log-input">
+								<div class="log-input-left">
+								   <input type="password" class="lock" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address:';}"/>
+								</div>
+								<span class="checkbox2">
+									 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i></label>
+								</span>
+								<div class="clearfix"> </div>
+							</div>
+							<input type="submit" value="Login to your account">
+						</form>	 
 						</div>
-						<div class="sign-u">
-							<div class="sign-up1">
-								<h4>Email Address* :</h4>
-							</div>
-							<div class="sign-up2">
-								<form>
-									<input type="text" placeholder=" " required=" "/>
-								</form>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<h6>Login Information</h6>
-						<div class="sign-u">
-							<div class="sign-up1">
-								<h4>Password* :</h4>
-							</div>
-							<div class="sign-up2">
-								<form>
-									<input type="password" placeholder=" " required=" "/>
-								</form>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="sign-u">
-							<div class="sign-up1">
-								<h4>Confirm Password* :</h4>
-							</div>
-							<div class="sign-up2">
-								<form>
-									<input type="password" placeholder=" " required=" "/>
-								</form>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="sub_home">
-							<div class="sub_home_left">
-								<form>
-									<input type="submit" value="Submit">
-								</form>
-							</div>
-							<div class="sub_home_right">
-								<p>Go Back to <a href="<?=base_url()?>/signin">Home</a></p>
-							</div>
-							<div class="clearfix"> </div>
+						<div class="new_people">
+							<h4>For New People</h4>
+							<p>Having hands on experience in creating innovative designs,I do offer design 
+								solutions which harness.</p>
+							<a href="<?=base_url()?>signup">Register Now!</a>
 						</div>
 					</div>
 				</div>

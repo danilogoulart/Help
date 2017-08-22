@@ -5,7 +5,12 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('header');
+		$dados = array(
+            "title" => "Home - MBR",
+            "nav_active" => "0",
+            "class" => "act"
+            );
+		$this->load->view('header',$dados);
 		$this->load->view('home');
         $this->load->view('footer');
 		
