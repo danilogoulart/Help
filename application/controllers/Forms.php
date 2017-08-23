@@ -17,5 +17,24 @@ class Forms extends CI_Controller {
         
     }
 
+    public function inserir()
+    {
+        if ($this->input->post('submit')==="submit"){
+            $this->load->model('chamados');
+
+            $chamado = $this->input->post();
+            $status = $this->chamados->insertChamados($chamado);
+
+            if ($status){
+                $mensagem = array(
+                    "class" => "success",
+                    "mensagem" => "Chamado cadastrado com sucesso!"
+                );
+            }else{
+
+            } 
+        }
+    }
+
     
 }
