@@ -6,7 +6,7 @@ class Codes extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Codes - MBR",
+            "title" => "Codes - Help",
             "nav_active" => "6",
             "class" => "act"
             );

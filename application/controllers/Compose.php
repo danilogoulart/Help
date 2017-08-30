@@ -6,7 +6,7 @@ class Compose extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Compose_mail - MBR",
+            "title" => "Compose_mail - Help",
             "nav_active" => "4",
             "class" => "act"
             );

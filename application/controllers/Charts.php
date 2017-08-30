@@ -6,7 +6,7 @@ class Charts extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Compose_mail - MBR",
+            "title" => "Compose_mail - Help",
             "nav_active" => "5",
             "class" => "act"
             );

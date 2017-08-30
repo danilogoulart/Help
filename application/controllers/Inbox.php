@@ -6,7 +6,7 @@ class Inbox extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Inbox - MBR",
+            "title" => "Inbox - Help",
             "nav_active" => "4",
             "class" => "act"
             );

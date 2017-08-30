@@ -6,7 +6,7 @@ class Blankpage extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Blank Page - MBR",
+            "title" => "Blank Page - Help",
             "nav_active" => "8",
             "class" => "act"
             );

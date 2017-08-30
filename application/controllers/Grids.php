@@ -6,7 +6,7 @@ class Grids extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Grids - MBR",
+            "title" => "Grids - Help",
             "nav_active" => "1",
             "class" => "act"
             );

@@ -6,7 +6,7 @@ class Widgets extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Widgets - MBR",
+            "title" => "Widgets - Help",
             "nav_active" => "1",
             "class" => "act"
             );

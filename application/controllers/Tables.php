@@ -6,7 +6,7 @@ class Tables extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Tables - MBR",
+            "title" => "Tables - Help",
             "nav_active" => "3",
             "class" => "act"
             );

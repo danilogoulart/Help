@@ -6,7 +6,7 @@ class Signup extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Sign-up - MBR",
+            "title" => "Sign-up - Help",
             "nav_active" => "8",
             "class" => "act"
             );

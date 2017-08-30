@@ -6,7 +6,7 @@ class Media extends CI_Controller {
     public function index()
     {
         $dados = array(
-            "title" => "Media - MBR",
+            "title" => "Media - Help",
             "nav_active" => "7",
             "class" => "act"
             );

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Projeto Pescadores de Homens - Ministério Batista da Restauração</title>
+<title>Login - Help</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Login celula mbr, relatorio de celulas, mbr12" />
@@ -41,7 +41,7 @@
 				<div class="graphs">
 					<div class="sign-in-form">
 						<div class="sign-in-form-top">
-							<p><span>Login</span> <a href="index.html">MBR12</a></p>
+							<p><span>Login</span> <a href="index.html">Help</a></p>
 						</div>
 						<div class="signin">
 							<div class="signin-rit">

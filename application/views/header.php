@@ -70,19 +70,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 <!--sidebar nav start-->
                     <ul class="nav nav-pills nav-stacked custom-nav">
-                        <li class="<?=$classe_nav[0]?>"><a href="<?=base_url()?>/home"><i class="lnr lnr-power-switch"></i><span>Dashboard</span></a></li>
-                        <li class="menu-list <?=$classe_nav[1]?>">
-                            <a href="#"><i class="lnr lnr-cog"></i>
-                                <span>Components</span></a>
-                                <ul class="sub-menu-list">
-                                    <li><a href="cked custom-nav">
-                        <li><a href="<?=base_url()?>grids">Grids</a> </li>
-                                
-                        <li><a href="<?=base_url()?>widgets">Widgets</a></li>
-                                </ul>
-                        </li>
-                        <li class="<?=$classe_nav[2]?>"><a href="<?=base_url()?>forms"><i class="lnr lnr-spell-check"></i> <span>Forms</span></a></li>
-                        <li class="<?=$classe_nav[3]?>"><a href="<?=base_url()?>tables"><i class="lnr lnr-menu"></i> <span>Tables</span></a></li>              
+                        <li class="<?=$classe_nav[0]?>"><a href="<?=base_url()?>/home"><i class="lnr lnr-cog"></i><span>Dashboard</span></a></li>
+                        
+                        <li class="<?=$classe_nav[2]?>"><a href="<?=base_url()?>chamados"><i class="lnr lnr lnr-pencil"></i> <span>Novo Chamado</span></a></li>
+                        <li class="<?=$classe_nav[3]?>"><a href="<?=base_url()?>tables"><i class="lnr lnr-menu"></i> <span>Chamados</span></a>
+                            <ul class="sub-menu-list">      
+                                <li><a href="<?=base_url()?>chamados/novos">Novos Chamados</a></li>
+                                <li><a href="<?=base_url()?>grids">Chamados em aberto</a></li>
+                                <li><a href="<?=base_url()?>table">Chamados em Análise</a></li>
+                                <li><a href="<?=base_url()?>table">Chamados Concluídos</a></li>
+                            </ul>
+                        </li>              
                         <li class="menu-list <?=$classe_nav[4]?>"><a href="#"><i class="lnr lnr-envelope"></i> <span>MailBox</span></a>
                             <ul class="sub-menu-list">
                                 <li><a href="<?=base_url()?>inbox">Inbox</a> </li>
@@ -94,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><a href="<?=base_url()?>charts">Basic Charts</a> </li>
                             </ul>
                         </li>
-                        <li class="<?=$classe_nav[6]?>">><a href="<?=base_url()?>codes"><i class="lnr lnr-pencil"></i> <span>Typography</span></a></li>
+                        <li class="<?=$classe_nav[6]?>"><a href="<?=base_url()?>codes"><i class="lnr lnr-spell-check"></i> <span>Typography</span></a></li>
                         <li class="<?=$classe_nav[7]?>"><a href="<?=base_url()?>media"><i class="lnr lnr-select"></i> <span>Media Css</span></a></li>
                         <li class="menu-list <?=$classe_nav[8]?>"><a href="#"><i class="lnr lnr-book"></i>  <span>Pages</span></a> 
                             <ul class="sub-menu-list">
@@ -102,6 +100,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><a href="<?=base_url()?>signup">Sign Up</a></li>
                                 <li><a href="<?=base_url()?>blankpage">Blank Page</a></li>
                             </ul>
+                        </li>
+                        <li class="menu-list <?=$classe_nav[1]?>">
+                            <a href="<?=base_url()?>login/sair"><i class="lnr lnr-power-switch"></i>
+                                <span>Sair</span></a>
+                                
                         </li>
                     </ul>
                 <!--sidebar nav end-->
