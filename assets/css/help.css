@@ -1,0 +1,56 @@
+#bg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    display: none;
+
+}
+
+#bg:target{
+    display: block; 
+    
+}
+
+#bg:target ~ .box{
+    display: block; 
+    top: 80px;
+    transition: all .3s;
+    transition-delay: .2s;
+}
+
+.box{
+
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    margin-left: 14em;
+    left: 50px;
+    background-color:#f9f9f9;
+    top: -1000px;
+
+
+}
+
+#close label{
+    margin-bottom: 10em;
+}
+
+#close{
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 35px;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    right: 0;
+}
+
+#close:hover{
+    opacity: .6;
+}

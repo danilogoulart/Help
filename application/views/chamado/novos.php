@@ -1,3 +1,30 @@
+			<script>
+			jQuery(document).ready(function($){
+				var janelaCriada = false;
+
+				$('.modalTe').click(function(e){
+					if(janelaCriada){
+						$('#fundoModal').show();
+						$('#imagem').attr("src",$(this).attr("href"));
+					}else{
+						var janelaModal =
+						'<div id="fundoModal">'+
+						'<div id="janela">'+
+						'<h2>Janela Modal</h2><img id="imagem" src="'+$(this).attr("href")+'">'+
+						'<p><a href="#" id="fecharModal">Fechar</a></p>'+
+						'</div></div>';
+						$('body').append(janelaModal);
+						$('#fecharModal').click(function(e){
+							$('#fundoModal').hide();
+						});
+
+						janelaCriada = true;
+					}
+					return false;
+				});
+			});
+		</script>
+
 			<div id="page-wrapper">
 				<div class="graphs">
 					<h3 class="blank1">Novos chamados</h3>
@@ -19,7 +46,6 @@
 								<th>Analista Resp</th>
 								<th>Data de Abertura</th>
 								<th></th>
-								<th></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -32,9 +58,13 @@
 								<td><?=$chamado["nome"]?></td>
 								<td><?=$chamado["nome_dev"]?></td>
 								<td><?=$chamado["data_chamado"]?></td>
-								<td></td>
-								<td></td>
+								<td><a href="#bg"><img src="<?=base_url()?>assets/images/edit.png" title="Editar" alt="Editar"></a></td>
+							
 							</tr>
+							<div id="bg"></div>
+							<div class="box">
+								<a href="" id="close"> <label for="">X</label> </a>
+							</div>
 						<?php endforeach ?>
 					<?php endif ?>
 					</tbody>
@@ -43,3 +73,7 @@
 				</div>
 			</div>
 		</div>
+
+		
+
+
