@@ -44,8 +44,7 @@ class Chamados_model extends CI_Model {
     }
 
     public function getChamadosNovos(){
-        $this->db->select('c.id_chamado, c.id_loja, c.nome_loja,
-            c.descricao_erro, u.nome, d.nome_dev, c.data_chamado');
+        $this->db->select('c.*, d.*, u.*');
         $this->db->from('chamados as c');
         $this->db->where("c.status = 'Não aberto'");
         $this->db->join('devs as d','c.id_dev = d.id');
