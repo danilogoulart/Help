@@ -5,6 +5,7 @@
 								<div style="text-align: center;" class="alert alert-<?=$alerta['class']?>">
 									<?=$alerta['mensagem']?>
 								</div>
+								<a href="#">teste</a>
 
 							<?php }?>
 						<div class="tab-content">
